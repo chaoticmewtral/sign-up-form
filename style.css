@@ -1,5 +1,8 @@
 :root {
-   
+    --color-black: rgb(13, 25, 49);
+    --color-white: rgb(227, 244, 230);
+    --color-accent-dark: rgb(78, 66, 147);
+    --color-accent-light: rgb(209, 144, 232);
 }
 
 body {
@@ -22,7 +25,6 @@ main {
 
 #sidebar {
     flex: 1;
-    background-image: url("/pride-dice.png");
     
 }
 
