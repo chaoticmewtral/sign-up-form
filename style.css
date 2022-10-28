@@ -3,7 +3,40 @@
     --color-white: rgb(227, 244, 230);
     --color-accent-dark: rgb(78, 66, 147);
     --color-accent-light: rgb(209, 144, 232);
+
+    /* // overall gradient background color */
+  --gradient_bg_color: #006dca; 
+
+  /* // spot 1 - top left corner */
+  --gradient_spot1_color: #001a39; 
+  --gradient_spot1_w: 75%;
+  --gradient_spot1_h: 75%;
+  --gradient_spot1_x: 0%;
+  --gradient_spot1_y: 0%;
+
+  /* // spot 2 - top right corner */
+  --gradient_spot2_color: #9b70ff; 
+  --gradient_spot2_w: 75%;
+  --gradient_spot2_h: 75%;
+  --gradient_spot2_x: 100%;
+  --gradient_spot2_y: 0%;
+
+  /* // spot 3 - bottom right corner */
+  --gradient_spot3_color: #42ffc6; 
+  --gradient_spot3_w: 75%;
+  --gradient_spot3_h: 75%;
+  --gradient_spot3_x: 100%;
+  --gradient_spot3_y: 100%;
+
+  /* // spot 4 - bottom left corner */
+  --gradient_spot4_color: #ff3b8d;
+  --gradient_spot4_w: 75%;
+  --gradient_spot4_h: 75%;
+  --gradient_spot4_x: 0%;
+  --gradient_spot4_y: 100%;
 }
+
+
 
 body {
     display: flex;
@@ -24,11 +57,72 @@ main {
 }
 
 #sidebar {
+    position: relative;
     flex: 1;
-    
+    background-color: var(--gradient_bg_color);
+  background-image:
+    radial-gradient(
+      var(--gradient_spot1_w) var(--gradient_spot1_h)
+      at left var(--gradient_spot1_x) top var(--gradient_spot1_y),
+      var(--gradient_spot1_color),
+      transparent
+    ),
+    radial-gradient(
+      var(--gradient_spot2_w) var(--gradient_spot2_h)
+      at left var(--gradient_spot2_x) top var(--gradient_spot2_y),
+      var(--gradient_spot2_color),
+      transparent
+    ),
+    radial-gradient(
+      var(--gradient_spot3_w) var(--gradient_spot3_h)
+      at left var(--gradient_spot3_x) top var(--gradient_spot3_y),
+      var(--gradient_spot3_color),
+      transparent
+    ),
+    radial-gradient(
+      var(--gradient_spot4_w) var(--gradient_spot4_h)
+      at left var(--gradient_spot4_x) top var(--gradient_spot4_y),
+      var(--gradient_spot4_color),
+      transparent
+    );
+}
+
+#bg-img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url("images/pride-dice.png");
+    background-size: 85%;
+    z-index: 1;
+}
+
+#logo-container {
+    width: 100%;
+    height: 20%;
+    position: relative;
+    top: 25%;
+    background-color: rgba(127, 127, 127, 0.5);
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
 }
 
 #form-side {
     flex: 2;
     padding: 5%;
+}
+
+img.logo {
+    width: 30%;
+    object-fit: scale-down;
+}
+
+#logo {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2em;
+    color: var(--color-black);
 }
