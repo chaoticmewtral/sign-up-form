@@ -1,0 +1,18 @@
+:root {
+    
+    --light-color: rgb(125, 185, 204);
+    --dark-color: rgb(9, 11, 55);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+}
+
+header,
+footer {
+    background-color: var(--light-color);
+    height: 30px;
+}
