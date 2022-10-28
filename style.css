@@ -36,16 +36,12 @@
   --gradient_spot4_y: 100%;
 }
 
-@font-face {
-    font-family: "Macondo";
-    src: url("macondo-regular-webfont.woff") format("woff"), url("macondo-regular-webfont.woff2"), format("woff2");
-}
-
 body {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 0;
+    font-family: "Lato", sans-serif;
 }
 
 
@@ -122,6 +118,5 @@ img.logo {
     display: flex;
     flex-wrap: wrap;
     font-size: 2.5em;
-    color: var(--color-black);
     font-family: "Macondo";
 }
