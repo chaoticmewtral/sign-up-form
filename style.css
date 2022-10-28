@@ -1,22 +1,32 @@
 :root {
-
-    /* generative color pallette */
-    --base-hue: 140;
-    --saturation: 95%;
-    --lightness: 80%;
-    --rotation: 60;
-
+   
 }
 
 body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-left: 0;
+    margin: 0;
 }
 
 header,
 footer {
-    background-color: var(--light-color);
+    background-color: blue;
     height: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#sidebar {
+    flex: 1;
+    background-image: url("/pride-dice.png");
+    
+}
+
+#form-side {
+    flex: 2;
+    padding: 5%;
 }
