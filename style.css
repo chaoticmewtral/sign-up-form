@@ -1,7 +1,11 @@
 :root {
-    
-    --light-color: rgb(125, 185, 204);
-    --dark-color: rgb(9, 11, 55);
+
+    /* generative color pallette */
+    --base-hue: 140;
+    --saturation: 95%;
+    --lightness: 80%;
+    --rotation: 60;
+
 }
 
 body {
