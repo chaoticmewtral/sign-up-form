@@ -1,8 +1,7 @@
 :root {
-    --color-black: rgb(13, 25, 49);
-    --color-white: rgb(227, 244, 230);
-    --color-accent-dark: rgb(78, 66, 147);
-    --color-accent-light: rgb(209, 144, 232);
+    /* --bg: 
+    --spot1: #15012e;
+    --spot2: */
 
     /* // overall gradient background color */
   --gradient_bg_color: #006dca; 
@@ -95,7 +94,7 @@ main {
     height: 20%;
     position: relative;
     top: 25%;
-    background-color: rgba(227, 244, 230, 0.5);
+    background-color: rgba(207, 244, 242, 0.58);
     z-index: 2;
     display: flex;
     flex-direction: row;
