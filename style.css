@@ -36,9 +36,7 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    max-width: max-content;
     margin: 0;
     font-family: "Lato", sans-serif;
 }
@@ -124,10 +122,18 @@ img.logo {
     justify-content: space-evenly;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 #fields {
     display: grid;
-    grid-template-columns: 50% 50%;
-    row-gap: 6%;
+    grid-template-columns: 30% 70%;
+    row-gap: 1rem;
+    align-items: lefts;
+    column-gap: 1rem;
 }
 
 .label {
@@ -144,5 +150,5 @@ img.logo {
     padding: .8rem 2.3rem;
     border-radius: 5px;
     border: transparent;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
 }
