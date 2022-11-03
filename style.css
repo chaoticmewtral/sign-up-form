@@ -193,7 +193,7 @@ input {
 }
 
 /* Validation and pseudo-classes */
-input:active {
+input:focus {
     border: .3px solid #249171;
 }
 
@@ -201,7 +201,7 @@ input:invalid {
     border: .3px solid red;
 }
 
-input[type="password"]:invalid>div {
+.error>p {
     font-size: .7em;
     color: red;
 }
