@@ -36,7 +36,7 @@
 }
 
 body {
-    max-width: max-content;
+    max-width: 900px;
     margin: 0;
     font-family: "Lato", sans-serif;
 }
@@ -120,6 +120,10 @@ img.logo {
     flex-direction: column;
     position: relative;
     justify-content: space-evenly;
+}
+
+#instructions>p {
+    font-weight: bold;
 }
 
 form {
