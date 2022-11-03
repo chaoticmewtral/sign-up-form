@@ -131,6 +131,8 @@ img.logo {
 #instructions>p {
     font-weight: bold;
     margin: 1em;
+    padding: 2em 1em 0 0;
+    letter-spacing: .1em;
 }
 
 form {
@@ -148,13 +150,17 @@ form {
     align-items: lefts;
     column-gap: 1rem;
     margin: 1.5em, 0, 1.2em, 0;
-    width: 100%;
-    box-shadow: 1px 0 2px;
+    padding-left: 1em;
+}
+#field-container {
+    padding: 1.2em 0;
+    box-shadow: 0 1px .4em var(--gradient_spot1_color);
 }
 
 .label {
-    font-size: .8rem;
+    font-size: .76rem;
     letter-spacing: .08rem;
+    text-transform: capitalize;
 }
 
 #button-container {
@@ -167,4 +173,9 @@ form {
     border-radius: 5px;
     border: transparent;
     margin-bottom: 1rem;
+}
+
+#button-container {
+    padding-left: 1em;
+    padding-bottom: 2em;
 }
