@@ -163,6 +163,8 @@ form {
     text-transform: capitalize;
 }
 
+
+
 input {
     border: .3px solid #688f83;
 }
@@ -193,15 +195,3 @@ input {
 }
 
 /* Validation and pseudo-classes */
-input:focus {
-    border: .3px solid #249171;
-}
-
-input:invalid {
-    border: .3px solid red;
-}
-
-.error>p {
-    font-size: .7em;
-    color: red;
-}
