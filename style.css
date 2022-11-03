@@ -163,6 +163,10 @@ form {
     text-transform: capitalize;
 }
 
+input {
+    border: .3px solid #688f83;
+}
+
 #button-container {
     margin-top: 3rem;
 }
@@ -173,9 +177,31 @@ form {
     border-radius: 5px;
     border: transparent;
     margin-bottom: 1rem;
+    background-color: #7c539c;
+    color: whitesmoke;
+    box-shadow: 1px 1px 1px #249171;
 }
 
 #button-container {
     padding-left: 1em;
     padding-bottom: 2em;
+}
+
+#button-container>p>span>a {
+    text-decoration: none;
+    color: #7c539c;
+}
+
+/* Validation and pseudo-classes */
+input:active {
+    border: .3px solid #249171;
+}
+
+input:invalid {
+    border: .3px solid red;
+}
+
+input[type="password"]:invalid>div {
+    font-size: .7em;
+    color: red;
 }
